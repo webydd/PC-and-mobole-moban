@@ -1,0 +1,2 @@
+@import url('function.less');
+.test2 { width: 100px; height: 100px; background: yellow; .abs; left: 40%; top:40%;}

@@ -1,0 +1,37 @@
+<link rel="stylesheet" type="text/css" href="asset/plug/jqueryui/themes/custom1/jquery-ui.css" />
+<script src="asset/plug/jqueryui/jquery-ui.js"></script>
+<script src="asset/plug/jqueryui/i18n/datepicker-zh-CN.js"></script>
+
+//dataPicker
+
+$.datepicker.setDefaults($.datepicker.regional["zh-CN"]);
+			$("#dateNum").on("change", function() {
+				$(".dateStart").datepicker("destroy");
+				var dataNum = $("#dateNum").val();
+				$(".dateStart,.dateEnd").val("")
+				if(dataNum < 7) {
+					console.log("小于7天")
+					var minDateNum = 7;
+				} else {
+					console.log("大于7天")
+					var minDateNum = 1;
+				}
+				$(".dateStart").datepicker({
+					showOtherMonths: true,
+					selectOtherMonths: true,
+					dateFormat: 'yy-mm-dd',
+					onSelect: function() {
+						var end = $(this).datepicker("getDate");
+						end = new Date(end.valueOf() + dataNum * 24 * 60 * 60 * 1000 - 1 * 24 * 60 * 60 * 1000);
+						var y = end.getFullYear()
+						var m = end.getMonth() + 1;
+						var d = end.getDate()
+						m = m < 10 ? "0" + m : m;
+						d = d < 10 ? "0" + d : d;
+						var ymd = y + '-' + m + '-' + d
+						$(this).val($(this).val() + "　00:00")
+						$(".dateEnd").val(ymd + "　23:59")
+					}
+				})
+				$(".dateStart").datepicker("option", "minDate", minDateNum);
+			})

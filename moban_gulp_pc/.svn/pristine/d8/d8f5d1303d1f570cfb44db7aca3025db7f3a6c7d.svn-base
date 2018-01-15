@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<!--style.css是less1.less,less2.less,less3.less编译后且合并后的文件-->
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<!--mr-app.js是jquery和common.js合并后的文件-->
+		<script src="asset/js/mr-app.js"></script>
+		<!--js.js文件是进行js1.js,js2.js,js3.js合并后的文件-->
+		<script src="asset/js/js.js"></script>
+	</head>
+
+	<body>
+		
+		<!--html编辑区-->
+		123123qweqweqweqweqwe
+		<!--第三方库或样式文件引用的地方，此处文件应放在相应的plug文件夹内-->
+		
+		
+	</body>
+	
+</html>

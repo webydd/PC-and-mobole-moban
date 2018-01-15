@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="asset/css/reset.css" />
+		<link rel="stylesheet" href="asset/css/style.css" />
+		<script src="asset/js/mr-app.js"></script>
+		<script src="asset/js/js.js"></script>
+	</head>
+	<body>
+		<!--第三方组件引用位置-->
+		<!--样式引用-->
+		<!--js引用-->
+		<div class="header"></div>
+ 	</body>
+</html>
